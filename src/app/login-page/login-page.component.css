@@ -1,0 +1,31 @@
+section{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url(../../assets/images/background-login.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.background-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.z-99{
+    z-index: 99;
+}
+
+div{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overflow-scroll-y{
+    overflow-y: auto;
+}

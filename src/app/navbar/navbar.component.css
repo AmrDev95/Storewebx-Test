@@ -1,0 +1,30 @@
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+.w-logo{
+    width: 150px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.navbar-toggler:focus{
+    color: var(--theme-color);
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .navbar-collapse li{
+        margin: auto !important;
+        text-align: center !important;
+        width: 75% !important;
+    }
+
+    .navbar-collapse ul{
+        margin: auto !important;
+    }
+}

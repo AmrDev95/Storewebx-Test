@@ -1,0 +1,28 @@
+<h2 class="text-white mb-5">Signup</h2>
+<form #signUpForm="ngForm" (ngSubmit)="signUp(signUpForm.value)" class="text-white">
+    <div class="mb-3">
+        <label class="form-label text-white">User Name</label>
+        <input type="email" class="form-control bg-dark border-0 text-white" name="userName" ngModel>
+      </div>
+      <div *ngIf="nameError" class="alert alert-danger" role="alert">
+        {{nameError}}
+     </div>
+    <div class="mb-3">
+        <label class="form-label text-white">Email address</label>
+        <input type="email" class="form-control bg-dark border-0 text-white" name="userEmail" ngModel>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div *ngIf="emailError" class="alert alert-danger" role="alert">
+        {{emailError}}
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control text-white bg-dark border-0" name="userPassword" ngModel>
+      </div>
+      <div *ngIf="passwordError" class="alert alert-danger" role="alert">
+        {{passwordError}}
+     </div>
+      <button class="btn btn-primary">Submit</button>
+</form>
+<p class="text-white mt-5">Already have an account ?</p>
+<button (click)="login()" class="btn btn-primary">Login</button>

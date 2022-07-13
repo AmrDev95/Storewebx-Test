@@ -1,0 +1,43 @@
+.update{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999;
+}
+
+.fa-xmark{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.overflow-Y{
+    overflow-y: auto;
+}
+
+.fs-custom{
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.movieEffect{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    top: 100%;
+    transition: all 1s;
+}
+
+.hover:hover .movieEffect{
+    top: 0%;
+}
